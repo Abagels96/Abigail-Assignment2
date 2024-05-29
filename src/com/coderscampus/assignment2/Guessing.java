@@ -4,8 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class  Guessing {
+Integer scan=chooseNumber();
 Integer guessingNumber=chooseNumber();
-	
+
 Integer chooseNumber() {
 	Random random= new Random();
 	int guessingNumber=random.nextInt(1,101);
@@ -32,8 +33,17 @@ Integer chooseNumber() {
 	
 	return guessingNumber;
 }
+
+void updateVariable(int scan) {
+	while(scan!=0) {
+	
+	this.scan=scan;}
+}
 	
 	Integer getNumber() {
-	return guessingNumber;
+	return scan;}
+	
+	String displayNumber() {
+		return "The number you are trying to guess is: " +guessingNumber;
 	}
 }
