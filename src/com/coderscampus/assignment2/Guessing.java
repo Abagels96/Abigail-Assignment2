@@ -17,10 +17,11 @@ Integer chooseNumber() {
 	String scanning= scanner.nextLine();	
 	
 	
-	Integer scan=Integer.parseInt(scanning);
+	Integer scan=Integer.parseInt(scanning); //changing the input to an integer
 	
 	if( scan==guessingNumber) {
 		System.out.println("You win");
+		
 	}
 	else if(scan>=1&& scan<guessingNumber) {
 		System.out.println("Please pick a higher number");
@@ -34,16 +35,12 @@ Integer chooseNumber() {
 	return guessingNumber;
 }
 
-void updateVariable(int scan) {
-	while(scan!=0) {
-	
-	this.scan=scan;}
-}
+
 	
 	Integer getNumber() {
 	return scan;}
 	
-	String displayNumber() {
+	String displayNumber(String a, Integer guessingNumber) {
 		return "The number you are trying to guess is: " +guessingNumber;
 	}
 }
