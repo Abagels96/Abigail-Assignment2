@@ -13,7 +13,7 @@ public class Main {
         	Integer input=guessing.chooseNumber();
        
  Integer number=guessing.guessingNumber;
- System.out.println(number);
+
  
  if(input>100||input<1) {
 	 i--;
